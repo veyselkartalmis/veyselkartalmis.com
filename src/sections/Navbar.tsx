@@ -9,12 +9,13 @@ function Navbar() {
   const [navbarVisible, setNavbarVisible] = useState(false);
   const [responsiveNavVisible, setResponsiveNavVisible] = useState(false);
   const sectionLinks = [
-    { name: "About", link: "/#about" },
-    { name: "Experience", link: "/#experience" },
-    { name: "Work", link: "/#work" },
+    { name: "About", link: "/#about", ariaLabel: "About" },
+    { name: "Experience", link: "/#experience", ariaLabel: "Experience" },
+    { name: "Work", link: "/#work", ariaLabel: "Work" },
     {
       name: "Contact",
       link: "/#contact",
+      ariaLabel: "Contact",
     },
   ];
 
@@ -95,7 +96,7 @@ function Navbar() {
           className={`${responsiveNavVisible && "nav-responsive"} nav-items`}
         >
           <ul className="nav-items-list">
-            {sectionLinks.map(({ name, link }, index) => (
+            {sectionLinks.map(({ name, link, ariaLabel }, index) => (
               <motion.li
                 key={name}
                 className="nav-items-list-item"
@@ -107,7 +108,11 @@ function Navbar() {
                   delay: 0.3 + index * 0.1,
                 }}
               >
-                <Link href={link} className="nav-items-list-item-link">
+                <Link
+                  href={link}
+                  className="nav-items-list-item-link"
+                  aria-label={ariaLabel}
+                >
                   {name}
                 </Link>
               </motion.li>

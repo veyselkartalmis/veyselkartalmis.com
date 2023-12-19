@@ -9,21 +9,25 @@ function SocialIcons() {
       name: "Github",
       icon: <FiGithub />,
       link: "https://www.github.com/veyselkartalmis",
+      ariaLabel: "Github",
     },
     {
       name: "LinkedIn",
       icon: <FiLinkedin />,
       link: "https://www.linkedin.com/in/veyselkartalmis/",
+      ariaLabel: "Linkedin",
     },
     {
       name: "Instagram",
       icon: <FiInstagram />,
       link: "https://instagram.com/veyselkartalmis",
+      ariaLabel: "Instagram",
     },
     {
       name: "Twitter",
       icon: <FiTwitter />,
       link: "https://twitter.com/veyselkartalms",
+      ariaLabel: "Twitter",
     },
   ];
   return (
@@ -38,12 +42,13 @@ function SocialIcons() {
       }}
     >
       <ul className="social-icons-list">
-        {socialLinks.map(({ name, icon, link }) => (
+        {socialLinks.map(({ name, icon, link, ariaLabel }) => (
           <li key={name} title={name} className="social-icons-list-item">
             <Link
               href={link}
               className="social-icons-list-item-link"
               target="_blank"
+              aria-label={ariaLabel}
             >
               {icon}
             </Link>
