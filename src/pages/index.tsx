@@ -26,9 +26,8 @@ function Index() {
         <title>Veysel Kartalmis</title>
         <link rel="shortcut icon" href="/favicon.svg" />
         <meta
-          name="Veysel Kartalmis"
-          content="Veysel Kartalmis - Frontend Developer"
-          key="desc"
+          name="description"
+          content="Veysel Kartalmis, Frontend Developer"
         />
       </Head>
       {showContent && (
