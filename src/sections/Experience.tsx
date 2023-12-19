@@ -61,7 +61,10 @@ function Experience() {
       start: "December 2020",
       end: "February 2021",
       shortDescription: [
-        "Control and rearrangement of the company's stock tracking programs on a contractual basis.",
+        "As a React Frontend Developer, I played a pivotal role in revamping and enhancing a stock tracking program. I diligently refactored existing code, addressed bugs, and introduced new features to elevate the program's functionality and user experience.",
+        "Conducted comprehensive code reviews and refactored the React codebase for improved readability, maintainability, and performance",
+        "Identified and resolved software defects, ensuring a stable and error-free operation of the stock tracking program.",
+        "Successfully implemented new features to enhance the program's capabilities, meeting the evolving needs of users and stakeholders.",
       ],
     },
     {
@@ -70,7 +73,12 @@ function Experience() {
       url: "https://ugetam.istanbul/",
       start: "September 2016",
       end: "June 2017",
-      shortDescription: ["Intern"],
+      shortDescription: [
+        "Developed robust desktop applications utilizing C# programming language.",
+        "Collaborated with cross-functional teams to gather requirements and implement software solutions that met client needs.",
+        "Participated in the entire software development life cycle, from concept and design to testing and deployment.",
+        "Debugged and resolved software defects, ensuring the delivery of high-quality, error-free applications.",
+      ],
     },
   ];
   return (
