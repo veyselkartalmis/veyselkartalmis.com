@@ -28,9 +28,9 @@ function About() {
       <div className="about-grid">
         <div className="about-grid-info">
           <p className="about-grid-info-text">
-            Hi! My name is Veysel, and I am passionate about creating digital
-            content for the web. My interest in web development was sparked in
-            2018.
+            Hi! My name is Veysel, and my interest in web development sparked in
+            2018. I work as a Frontend Developer. Especially, I enjoy working
+            with modern JavaScript libraries like React and Next.
           </p>
           <p className="about-grid-info-text">
             I am working on a project where you can make comparisons for
