@@ -357,6 +357,9 @@ nav .blur-nav {
   font-size: var(--tsm1);
 }
 @media screen and (max-width: 768px) {
+  .hero {
+    margin-top: unset;
+  }
   .hero-text {
     width: 90%;
   }
@@ -947,6 +950,11 @@ nav .blur-nav {
 }
 .contact .contact-cta .btn {
   padding: 1rem 2rem;
+}
+@media only screen and (max-width: 767px) {
+  .contact {
+    margin: 3rem auto;
+  }
 }
 
 footer {
